@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val btnSuma = findViewById<Button>(R.id.btnSuma)
+        val btnAbriSu = findViewById<Button>(R.id.btnAbriCalSu)
         val et1 = findViewById<EditText>(R.id.et1tk)
         val et2 = findViewById<EditText>(R.id.et2Kt)
         val tv3 = findViewById<TextView>(R.id.tv3Tk)
@@ -22,11 +23,13 @@ class MainActivity : AppCompatActivity() {
             /*val n1 = et1.text.toString().toInt();
             val n2 = et2.text.toString().toInt();
             val res = n1+n2;*/
-            tv3.setText(et1.text.toString().toInt() + et2.text.toString().toInt());
+            tv3.setText((et1.text.toString().toInt() + et2.text.toString().toInt()).toString());
         }
 
-
-
+        btnAbriSu.setOnClickListener {
+            val i = Intent(this, MainActivity2::class.java)
+            startActivity(i)
+        }
 
         val btn = findViewById<Button>(R.id.button)
         btn.setOnClickListener {
