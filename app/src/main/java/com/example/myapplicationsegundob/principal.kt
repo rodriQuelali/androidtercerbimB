@@ -26,8 +26,19 @@ class principal : AppCompatActivity() {
             startActivity(i)
         }
 
-        btn2.setOnClickListener {
+        
+        btn3.setOnClickListener {
             val i = Intent(this, MainActivity2::class.java)
+            startActivity(i)
+        }
+
+        btn4.setOnClickListener {
+            val i = Intent(this, MainActivityAgenda::class.java)
+            startActivity(i)
+        }
+
+        btn5.setOnClickListener {
+            val i = Intent(this, MainActivitySQLite::class.java);
             startActivity(i)
         }
     }

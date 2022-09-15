@@ -54,18 +54,20 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="Calcular sueldo del medio de 3 sueldos" />
+
             <Button
                 android:id="@+id/btn4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Button" />
+                android:text="Agenda Personal" />
+
             <Button
                 android:id="@+id/btn5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Button" />
+                android:text="SQLite" />
             <Button
                 android:id="@+id/btn6"
                 android:layout_width="match_parent"
